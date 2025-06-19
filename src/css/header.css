@@ -93,9 +93,6 @@
     -webkit-text-stroke-color: var(--orange);
     -webkit-text-stroke-width: 16px;
     paint-order: stroke fill;
-    /* text-shadow: -1px -1px 0px var(--orange), -1px -1px 0px var(--orange),
-      -1px -1px 0px var(--orange), -1px -1px 0px var(--orange);
-    color: #fdfff1; */
   }
   .header-nav {
     display: flex;
@@ -114,6 +111,22 @@
     font-size: 16px;
     text-align: center;
     color: var(--white);
+  }
+  .nav-link::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    bottom: 1px;
+    border-radius: 1px;
+    display: block;
+    background: var(--white);
+    transition: 300ms;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
   }
   .burger-menu {
     display: none;
