@@ -1,0 +1,121 @@
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 998;
+  box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
+    0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
+    0 4px 3px 0 rgba(154, 17, 32, 0.28), 0 6px 6px 0 rgba(154, 17, 32, 0.35),
+    0 10px 10px 0 rgba(154, 17, 32, 0.46);
+  background: var(--orange);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+.logo-link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--white);
+  max-width: 68px;
+}
+.header-nav {
+  display: none;
+}
+
+/* Меню бургер */
+
+.burger-menu {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger {
+  width: 30px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.burger-line {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+.burger-line:nth-child(1) {
+  top: 0;
+}
+.burger-line:nth-child(2) {
+  top: 11px;
+}
+.burger-line:nth-child(3) {
+  top: 22px;
+}
+/* Активна анімація */
+.burger[data-state='open'] .burger-line:nth-child(1) {
+  top: 11px;
+  transform: rotate(135deg);
+}
+.burger[data-state='open'] .burger-line:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+.burger[data-state='open'] .burger-line:nth-child(3) {
+  top: 11px;
+  transform: rotate(-135deg);
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    background-color: var(--green);
+    box-shadow: none;
+  }
+  .header-container {
+    height: 100px;
+  }
+  .logo-link {
+    max-width: 162px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke-color: var(--orange);
+    -webkit-text-stroke-width: 16px;
+    paint-order: stroke fill;
+    /* text-shadow: -1px -1px 0px var(--orange), -1px -1px 0px var(--orange),
+      -1px -1px 0px var(--orange), -1px -1px 0px var(--orange);
+    color: #fdfff1; */
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+  .nav-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white);
+  }
+  .burger-menu {
+    display: none;
+  }
+}
