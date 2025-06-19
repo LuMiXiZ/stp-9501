@@ -1,11 +1,11 @@
 {
-  "name": "pizza-rush-lp",
+  "name": "STP-9501",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/pizza-rush-lp/",
+    "build": "vite build --base=/STP-9501/",
     "preview": "vite preview"
   },
   "devDependencies": {
