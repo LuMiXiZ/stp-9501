@@ -82,18 +82,7 @@
     left: 0;
     top: 41px;
     filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s ease;
-  }
-  .hero-slice:hover {
     animation: floatUp 1s ease-in-out infinite alternate;
-  }
-  @keyframes floatUp {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-10px);
-    }
   }
   .hero-text {
     width: 617px;
