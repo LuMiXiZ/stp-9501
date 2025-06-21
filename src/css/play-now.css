@@ -1,0 +1,32 @@
+.play-now-container {
+  padding: 42px 0;
+  background-color: #fff;
+  box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
+    0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
+    0 4px 3px 0 rgba(154, 17, 32, 0.28), 0 6px 6px 0 rgba(154, 17, 32, 0.35),
+    0 10px 10px 0 rgba(154, 17, 32, 0.46);
+}
+
+.play-now-h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--red);
+  margin-bottom: 32px;
+}
+.play-now-p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--red);
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .play-now-h2 {
+    max-width: 617px;
+  }
+  .play-now-p {
+    max-width: 921px;
+  }
+}
