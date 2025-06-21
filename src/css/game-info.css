@@ -1,0 +1,56 @@
+.game-info-container {
+  padding: 144px 0;
+}
+
+.game-info-h2 {
+  max-width: 288px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--red);
+  margin-bottom: 32px;
+}
+
+.game-info-contain-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 41px;
+}
+
+.game-info-p {
+  max-width: 160px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 1200px) {
+  .game-info-h2 {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .game-info-contain-div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .game-info-p1 {
+    margin-right: 81px;
+  }
+
+  .game-info-p2 {
+    margin-right: 32px;
+  }
+
+  .game-info-p3 {
+    margin-right: 20px;
+  }
+
+  .game-info-p4 {
+    margin-right: 32px;
+  }
+}

@@ -11,4 +11,10 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./footer.css');
+@import url('./contact.css');
+@import url('./play-now.css');
+@import url('./how-to-play.css');
+@import url('./game-info.css');
+
 /* @import url('./footer.css'); */
