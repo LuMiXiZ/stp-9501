@@ -82,12 +82,12 @@
     box-shadow: none;
     transition: background-color 0.3s ease;
   }
-  /* .header[data-bg='green'] {
+  .header[data-bg='green'] {
     background-color: var(--green);
   }
   .header[data-bg='orange'] {
     background-color: var(--orange);
-  } */
+  }
   .header-container {
     height: 100px;
   }

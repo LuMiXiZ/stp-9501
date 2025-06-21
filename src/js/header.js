@@ -1,31 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('[data-action="toggle-burger"]');
-    if (burger) {
-        burger.addEventListener('click', () => {
-            const isOpen = burger.getAttribute('data-state') === 'open';
-            burger.setAttribute('data-state', isOpen ? 'closed' : 'open');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuLinks = document.querySelectorAll('[data-action="close-menu"]');
+
+    const toggleMenu = () => {
+        const isOpen = burger.getAttribute('data-state') === 'open';
+        const newState = isOpen ? 'closed' : 'open';
+
+        burger.setAttribute('data-state', newState);
+        mobileMenu.setAttribute('data-state', newState);
+    };
+
+    burger.addEventListener('click', toggleMenu);
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burger.setAttribute('data-state', 'closed');
+            mobileMenu.setAttribute('data-state', 'closed');
         });
-    }
+    });
 
     const header = document.querySelector('.header');
     const sections = document.querySelectorAll('[data-bg]');
 
-    const updateHeaderColor = () => {
-        const headerRect = header.getBoundingClientRect();
-        const headerMiddleY = headerRect.top + headerRect.height / 2;
+    const getOppositeColor = (color) => {
+        return color === 'green' ? 'orange' : 'green';
+    };
 
-        for (const section of sections) {
+    const updateHeaderBg = () => {
+        let currentSection = null;
+
+        sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
-            if (rect.top <= headerMiddleY && rect.bottom >= headerMiddleY) {
-                const sectionColor = section.dataset.bg;
-                const oppositeColor = sectionColor === 'green' ? 'orange' : 'green';
-                header.setAttribute('data-bg', oppositeColor);
-                break;
+            if (rect.top <= header.offsetHeight && rect.bottom > header.offsetHeight) {
+                currentSection = section;
             }
+        });
+
+        if (currentSection) {
+            const sectionColor = currentSection.getAttribute('data-bg');
+            header.setAttribute('data-bg', getOppositeColor(sectionColor));
         }
     };
 
-    window.addEventListener('scroll', updateHeaderColor);
-    window.addEventListener('resize', updateHeaderColor);
-    updateHeaderColor(); // виклик при завантаженні
+    updateHeaderBg();
+    window.addEventListener('scroll', updateHeaderBg);
 });
