@@ -1,0 +1,57 @@
+.features-section {
+  padding-bottom: 144px;
+}
+.container {
+}
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-title {
+  margin-bottom: 24px;
+}
+.features-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.features-pizza-slice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 286px;
+  height: 243px;
+  background-image: url('/img/slice-bg.webp');
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 0px 0px rgba(154, 17, 32, 0.11))
+    drop-shadow(0 1px 1px rgba(154, 17, 32, 0.18))
+    drop-shadow(0 2px 2px rgba(154, 17, 32, 0.23))
+    drop-shadow(0 4px 3px rgba(154, 17, 32, 0.28))
+    drop-shadow(0 6px 6px rgba(154, 17, 32, 0.35))
+    drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
+}
+.features-pizza-icon {
+  fill: var(--white);
+  margin-bottom: 12px;
+}
+.features-pizza-title {
+  width: 148px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.features-pizza-text {
+  width: 148px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--white);
+}
