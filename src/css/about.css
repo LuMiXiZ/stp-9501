@@ -1,0 +1,103 @@
+.about-section {
+  background-color: var(--green);
+  padding: 144px 0;
+  position: relative;
+  overflow: hidden;
+}
+.about-section-wrapper {
+  box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
+    0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
+    0 4px 3px 0 rgba(154, 17, 32, 0.28), 0 6px 6px 0 rgba(154, 17, 32, 0.35),
+    0 10px 10px 0 rgba(154, 17, 32, 0.46);
+  background: var(--white);
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 42px;
+  position: relative;
+  z-index: 1;
+}
+.about-pizza-top {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  top: -104px;
+  left: 0;
+  animation: spin 6s linear infinite;
+}
+.about-pizza-bottom-wrapper {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  bottom: -104px;
+  right: 0;
+}
+.about-pizza-bottom-wrapper::after {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-image: url(/img/pizza2x.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -52px;
+  content: '';
+  display: block;
+  width: 156px;
+  height: 156px;
+  z-index: -1;
+  filter: drop-shadow(0 0px 0px rgba(154, 17, 32, 0.11))
+    drop-shadow(0 1px 1px rgba(154, 17, 32, 0.18))
+    drop-shadow(0 2px 2px rgba(154, 17, 32, 0.23))
+    drop-shadow(0 4px 3px rgba(154, 17, 32, 0.28))
+    drop-shadow(0 6px 6px rgba(154, 17, 32, 0.35))
+    drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
+}
+.about-pizza-bottom {
+  animation: spin-reverse 6s linear infinite;
+}
+.about-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--red);
+}
+.about-description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--red);
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-container {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    gap: 32px;
+  }
+  .about-description {
+    width: 708px;
+  }
+  .about-pizza-top {
+    width: 226px;
+    height: 226px;
+    top: -91px;
+  }
+  .about-pizza-bottom-wrapper {
+    width: 162px;
+    height: 162px;
+    bottom: -38px;
+    right: 64px;
+  }
+  .about-pizza-bottom-wrapper::after {
+    width: 162px;
+    height: 162px;
+    top: 124px;
+    background-position: 0px -126px;
+  }
+}
