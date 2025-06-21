@@ -14,13 +14,13 @@
     <script type="module" crossorigin src="/stp-9501/index.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-9501/assets/vendor-Dt-heFyE.js">
     <link rel="stylesheet" crossorigin href="/stp-9501/assets/vendor-Ds_YmOBQ.css">
-    <link rel="stylesheet" crossorigin href="/stp-9501/assets/index-DjhgPSwK.css">
+    <link rel="stylesheet" crossorigin href="/stp-9501/assets/index-B-X74eUJ.css">
   </head>
 
   <body>
     <header class="header" data-bg="green">
   <div class="container header-container">
-    <a href="/index.html" class="logo-link">Pizza Rush</a>
+    <a href="../index.html" class="logo-link">Pizza Rush</a>
     <nav class="header-nav">
       <ul class="nav-list">
         <li class="nav-item">
@@ -65,7 +65,7 @@
     </nav>
 
     <div class="burger-menu">
-      <div class="burger" data-action="toggle-burger">
+      <div class="burger" data-action="toggle-burger" data-state="closed">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -76,6 +76,72 @@
 
 
     <main>
+      <div class="mobile-menu" data-state="closed">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+      <a href="#about" class="mobile-menu-link" data-action="close-menu"
+        >About</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#features" class="mobile-menu-link" data-action="close-menu"
+        >Features</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#how-to-play" class="mobile-menu-link" data-action="close-menu"
+        >How to Play</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#game-modes" class="mobile-menu-link" data-action="close-menu"
+        >Game Modes</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a
+        href="#why-youll-love-it"
+        class="mobile-menu-link"
+        data-action="close-menu"
+        >Why You'll Love It</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#upgrades" class="mobile-menu-link" data-action="close-menu"
+        >Upgrades</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#tips" class="mobile-menu-link" data-action="close-menu">Tips</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#community" class="mobile-menu-link" data-action="close-menu"
+        >Community</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#reviews" class="mobile-menu-link" data-action="close-menu"
+        >Reviews</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#game-info" class="mobile-menu-link" data-action="close-menu"
+        >Game Info</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#play-now" class="mobile-menu-link" data-action="close-menu"
+        >Play Now</a
+      >
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#contact" class="mobile-menu-link" data-action="close-menu"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</div>
+
       <section class="hero-section" data-bg="orange">
   <div class="container hero-container">
     <img src="/stp-9501/assets/pizza-slice2x-CjJtErNT.webp" class="hero-slice" alt="Pizz Slice"/>
@@ -137,7 +203,7 @@
   </div>
 </section>
 
-      <section class="features-section" id="features">
+      <section class="features-section" id="features" data-bg="green">
   <div class="container features-container">
     <h2 class="features-title">Key Features</h2>
     <div class="features-pizza">
@@ -201,7 +267,7 @@
   </div>
 </section>
 
-      <section class="how-to-play-section" id="how-to-play">
+      <section class="how-to-play-section" id="how-to-play" data-bg="orange">
   <div class="container how-to-play-container">
     <h2 class="how-to-play-title">How to Play</h2>
     <div class="how-to-play-swiper swiper">
@@ -342,23 +408,27 @@
   </div>
 </section>
 
-      <section class="game-modes-section" id="game-modes">
+      <section class="game-modes-section" id="game-modes" data-bg="green">
   <div class="container">Game Modes Section</div>
 </section>
 
-      <section class="why-youll-love-it-section" id="why-youll-love-it">
+      <section
+  class="why-youll-love-it-section"
+  id="why-youll-love-it"
+  data-bg="green"
+>
   <div class="container">Why you'll Love It Section</div>
 </section>
 
-      <section class="upgrades-section" id="upgrades">
+      <section class="upgrades-section" id="upgrades" data-bg="green">
   <div class="container">Upgrades Section</div>
 </section>
 
-      <section class="tips-section" id="tips">
+      <section class="tips-section" id="tips" data-bg="green">
   <div class="container">Tips Section</div>
 </section>
 
-      <section class="reviews-section" id="reviews">
+      <section class="reviews-section" id="reviews" data-bg="green">
   <div class="container reviews-container">
     <h2 class="reviews-h2">Reviews from Players</h2>
     <div class="swiper reviews-swiper">
@@ -464,7 +534,7 @@
   </div>
 </section>
 
-      <section class="community-section" id="community">
+      <section class="community-section" id="community" data-bg="green">
   <div class="community-wrapper">
     <div class="container community-container">
       <h2 class="community-h2">Join the Pizza Rush Community</h2>
@@ -509,7 +579,7 @@
   </div>
 </section>
 
-      <section class="game-info-section" id="game-info">
+      <section class="game-info-section" id="game-info" data-bg="green">
   <div class="container game-info-container">
     <h2 class="game-info-h2">Technical Details</h2>
     <div class="game-info-contain-div">
@@ -522,7 +592,7 @@
   </div>
 </section>
 
-      <section class="play-now-section" id="play-now">
+      <section class="play-now-section" id="play-now" data-bg="green">
   <div class="play-now-wrapper">
     <div class="container play-now-container">
       <h2 class="play-now-h2">
@@ -537,7 +607,7 @@
   </div>
 </section>
 
-      <section class="contact-section" id="contact">
+      <section class="contact-section" id="contact" data-bg="green">
   <div class="container contact-container">
     <h2 class="contact-h2"> Contact & Support</h2>
     <p class="contact-text">Need help or want to share feedback?</p>
