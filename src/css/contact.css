@@ -31,7 +31,10 @@
   margin-bottom: 32px;
 }
 
-.contact-img {
+.contact-email-svg {
+  width: 84px;
+  height: 84px;
+  fill: var(--red);
   margin-bottom: 32px;
 }
 

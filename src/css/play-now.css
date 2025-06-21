@@ -1,5 +1,8 @@
 .play-now-container {
   padding: 42px 0;
+}
+
+.play-now-wrapper {
   background-color: #fff;
   box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
     0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
@@ -22,7 +25,15 @@
   margin-bottom: 32px;
 }
 
+.play-now-svg {
+  width: 191px;
+  height: 56px;
+}
+
 @media only screen and (min-width: 1200px) {
+  .play-now-container {
+    padding-left: 155px;
+  }
   .play-now-h2 {
     max-width: 617px;
   }

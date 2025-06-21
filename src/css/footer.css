@@ -53,4 +53,8 @@
     flex-direction: row;
     gap: 102px;
   }
+
+  .footer-pizza-rush {
+    max-width: 526px;
+  }
 }
