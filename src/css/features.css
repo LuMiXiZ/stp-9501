@@ -98,7 +98,7 @@
       drop-shadow(0 4px 3px rgba(154, 17, 32, 0.28))
       drop-shadow(0 6px 6px rgba(154, 17, 32, 0.35))
       drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .features-pizza-slice:nth-child(1) {
