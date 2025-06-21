@@ -92,20 +92,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0 0px 0px rgba(154, 17, 32, 0.11))
-      drop-shadow(0 1px 1px rgba(154, 17, 32, 0.18))
-      drop-shadow(0 2px 2px rgba(154, 17, 32, 0.23))
-      drop-shadow(0 4px 3px rgba(154, 17, 32, 0.28))
-      drop-shadow(0 6px 6px rgba(154, 17, 32, 0.35))
-      drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
+    filter: drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
     transition: all 0.3s ease-in-out;
+    will-change: scale, transform;
   }
 
   .features-pizza-slice:nth-child(1) {
     transform: rotate(141deg) translate(3%, 154%);
   }
   .features-pizza-slice:nth-child(1):hover {
-    transform: rotate(141deg) translate(2%, 164%) scale(1.05);
+    scale: 1.05;
   }
   .features-pizza-slice:nth-child(1) .features-pizza-slice-content {
     transform: rotate(-141deg) translate(-10%, -10%);
@@ -115,7 +111,7 @@
     transform: rotate(213deg) translate(77.5%, 76.5%);
   }
   .features-pizza-slice:nth-child(2):hover {
-    transform: rotate(213deg) translate(77.5%, 84.5%) scale(1.05);
+    scale: 1.05;
   }
   .features-pizza-slice:nth-child(2) .features-pizza-slice-content {
     transform: rotate(-213deg) translate(10%, -10%);
@@ -125,7 +121,7 @@
     transform: rotate(285deg) translate(36.5%, -31.5%);
   }
   .features-pizza-slice:nth-child(3):hover {
-    transform: rotate(285deg) translate(37.5%, -23.5%) scale(1.05);
+    scale: 1.05;
   }
   .features-pizza-slice:nth-child(3) .features-pizza-slice-content {
     transform: rotate(-285deg) translate(15%, 0%);
@@ -135,7 +131,7 @@
     transform: rotate(-3deg) translate(-63%, -19%);
   }
   .features-pizza-slice:nth-child(4):hover {
-    transform: rotate(-3deg) translate(-63%, -12%) scale(1.05);
+    scale: 1.05;
   }
   .features-pizza-slice:nth-child(4) .features-pizza-slice-content {
     transform: rotate(3deg);
@@ -145,7 +141,7 @@
     transform: rotate(69deg) translate(-83%, 96%);
   }
   .features-pizza-slice:nth-child(5):hover {
-    transform: rotate(69deg) translate(-83%, 104%) scale(1.05);
+    scale: 1.05;
   }
   .features-pizza-slice:nth-child(5) .features-pizza-slice-content {
     transform: rotate(-69deg) translate(-5%, 0%);
