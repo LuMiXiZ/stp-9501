@@ -31,7 +31,7 @@ body {
   overflow-x: hidden;
 }
 section {
-  scroll-margin-top: 20px;
+  scroll-margin-top: 100px;
 }
 
 .visually-hidden {
