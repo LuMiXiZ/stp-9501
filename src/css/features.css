@@ -1,8 +1,6 @@
 .features-section {
   padding-bottom: 144px;
 }
-.container {
-}
 .features-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +8,11 @@
 }
 .features-title {
   margin-bottom: 24px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--white);
 }
 .features-pizza {
   display: flex;
@@ -18,10 +21,6 @@
   gap: 20px;
 }
 .features-pizza-slice {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 286px;
   height: 243px;
   background-image: url('/img/slice-bg.webp');
@@ -33,6 +32,13 @@
     drop-shadow(0 4px 3px rgba(154, 17, 32, 0.28))
     drop-shadow(0 6px 6px rgba(154, 17, 32, 0.35))
     drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
+}
+.features-pizza-slice-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .features-pizza-icon {
   fill: var(--white);
@@ -54,4 +60,107 @@
   font-size: 16px;
   text-align: center;
   color: var(--white);
+}
+.features-pizza-slice:nth-child(3) .features-pizza-text {
+  width: 160px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .features-title {
+    margin-bottom: 34px;
+  }
+  .features-pizza {
+    position: relative;
+    display: block;
+    width: 870px;
+    height: 870px;
+    border-radius: 50%;
+  }
+  .features-pizza-slice {
+    clip-path: polygon(55% -8%, -10% 82%, 12% 110%, 57% 110%, 113% 100%);
+    position: absolute;
+    top: 59%;
+    left: 55%;
+    transform-origin: center center;
+    width: 447px;
+    height: 378px;
+    background-image: url('/img/slice-bg.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0px 0px rgba(154, 17, 32, 0.11))
+      drop-shadow(0 1px 1px rgba(154, 17, 32, 0.18))
+      drop-shadow(0 2px 2px rgba(154, 17, 32, 0.23))
+      drop-shadow(0 4px 3px rgba(154, 17, 32, 0.28))
+      drop-shadow(0 6px 6px rgba(154, 17, 32, 0.35))
+      drop-shadow(0 10px 10px rgba(154, 17, 32, 0.46));
+    transition: all 0.3s ease-in-out;
+  }
+
+  .features-pizza-slice:nth-child(1) {
+    transform: rotate(141deg) translate(3%, 154%);
+  }
+  .features-pizza-slice:nth-child(1):hover {
+    transform: rotate(141deg) translate(2%, 164%) scale(1.05);
+  }
+  .features-pizza-slice:nth-child(1) .features-pizza-slice-content {
+    transform: rotate(-141deg) translate(-10%, -10%);
+  }
+
+  .features-pizza-slice:nth-child(2) {
+    transform: rotate(213deg) translate(77.5%, 76.5%);
+  }
+  .features-pizza-slice:nth-child(2):hover {
+    transform: rotate(213deg) translate(77.5%, 84.5%) scale(1.05);
+  }
+  .features-pizza-slice:nth-child(2) .features-pizza-slice-content {
+    transform: rotate(-213deg) translate(10%, -10%);
+  }
+
+  .features-pizza-slice:nth-child(3) {
+    transform: rotate(285deg) translate(36.5%, -31.5%);
+  }
+  .features-pizza-slice:nth-child(3):hover {
+    transform: rotate(285deg) translate(37.5%, -23.5%) scale(1.05);
+  }
+  .features-pizza-slice:nth-child(3) .features-pizza-slice-content {
+    transform: rotate(-285deg) translate(15%, 0%);
+  }
+
+  .features-pizza-slice:nth-child(4) {
+    transform: rotate(-3deg) translate(-63%, -19%);
+  }
+  .features-pizza-slice:nth-child(4):hover {
+    transform: rotate(-3deg) translate(-63%, -12%) scale(1.05);
+  }
+  .features-pizza-slice:nth-child(4) .features-pizza-slice-content {
+    transform: rotate(3deg);
+  }
+
+  .features-pizza-slice:nth-child(5) {
+    transform: rotate(69deg) translate(-83%, 96%);
+  }
+  .features-pizza-slice:nth-child(5):hover {
+    transform: rotate(69deg) translate(-83%, 104%) scale(1.05);
+  }
+  .features-pizza-slice:nth-child(5) .features-pizza-slice-content {
+    transform: rotate(-69deg) translate(-5%, 0%);
+  }
+  .features-pizza-icon {
+    width: 75px;
+    height: 75px;
+  }
+  .features-pizza-title {
+    width: 202px;
+  }
+  .features-pizza-text {
+    width: 202px;
+  }
+  .features-pizza-slice:nth-child(3) .features-pizza-text {
+    width: 202px;
+  }
 }
