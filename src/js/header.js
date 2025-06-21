@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('[data-action="toggle-burger"]');
     const mobileMenu = document.querySelector('.mobile-menu');
     const menuLinks = document.querySelectorAll('[data-action="close-menu"]');
+    const body = document.body;
 
     const toggleMenu = () => {
         const isOpen = burger.getAttribute('data-state') === 'open';
@@ -9,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         burger.setAttribute('data-state', newState);
         mobileMenu.setAttribute('data-state', newState);
+
+        if (newState === 'open') {
+            body.setAttribute('data-menu', 'open');
+        } else {
+            body.removeAttribute('data-menu');
+        }
     };
 
     burger.addEventListener('click', toggleMenu);
@@ -17,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             burger.setAttribute('data-state', 'closed');
             mobileMenu.setAttribute('data-state', 'closed');
+            body.removeAttribute('data-menu');
         });
     });
 

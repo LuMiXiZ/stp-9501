@@ -29,6 +29,9 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+body[data-menu='open'] {
+  overflow: hidden;
+}
 section {
   scroll-margin-top: 100px;
   overflow: hidden;
