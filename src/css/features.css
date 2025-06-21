@@ -102,6 +102,7 @@
   }
   .features-pizza-slice:nth-child(1):hover {
     scale: 1.05;
+    transform: rotate(141deg) translate(1%, 160%);
   }
   .features-pizza-slice:nth-child(1) .features-pizza-slice-content {
     transform: rotate(-141deg) translate(-10%, -10%);
@@ -112,6 +113,7 @@
   }
   .features-pizza-slice:nth-child(2):hover {
     scale: 1.05;
+    transform: rotate(213deg) translate(72.5%, 86.5%);
   }
   .features-pizza-slice:nth-child(2) .features-pizza-slice-content {
     transform: rotate(-213deg) translate(10%, -10%);
@@ -122,6 +124,7 @@
   }
   .features-pizza-slice:nth-child(3):hover {
     scale: 1.05;
+    transform: rotate(285deg) translate(34.5%, -18.5%);
   }
   .features-pizza-slice:nth-child(3) .features-pizza-slice-content {
     transform: rotate(-285deg) translate(15%, 0%);
@@ -132,6 +135,7 @@
   }
   .features-pizza-slice:nth-child(4):hover {
     scale: 1.05;
+    transform: rotate(-3deg) translate(-59%, -7%);
   }
   .features-pizza-slice:nth-child(4) .features-pizza-slice-content {
     transform: rotate(3deg);
@@ -142,6 +146,7 @@
   }
   .features-pizza-slice:nth-child(5):hover {
     scale: 1.05;
+    transform: rotate(69deg) translate(-83%, 110%);
   }
   .features-pizza-slice:nth-child(5) .features-pizza-slice-content {
     transform: rotate(-69deg) translate(-5%, 0%);
