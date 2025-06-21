@@ -64,6 +64,9 @@
 .features-pizza-slice:nth-child(3) .features-pizza-text {
   width: 160px;
 }
+.features-pizza-slice:nth-child(3) .features-pizza-icon {
+  margin-left: 15px;
+}
 
 @media only screen and (min-width: 1200px) {
   .features-title {
