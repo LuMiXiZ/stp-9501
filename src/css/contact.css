@@ -36,6 +36,9 @@
   height: 84px;
   fill: var(--red);
   margin-bottom: 32px;
+  transform-origin: 40% 50%;
+  animation: boat-sway-combined 4s infinite;
+  animation-timing-function: linear;
 }
 
 @media only screen and (min-width: 1200px) {
