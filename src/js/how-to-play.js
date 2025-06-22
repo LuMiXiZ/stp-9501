@@ -1,10 +1,8 @@
 import Swiper from 'swiper';
-import 'swiper/css';
 import { Navigation, Pagination } from 'swiper/modules';
-
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper('.how-to-play-swiper', {
