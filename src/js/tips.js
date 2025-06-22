@@ -1,28 +1,27 @@
 import Swiper from 'swiper';
-import 'swiper/css';
 import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
 document.addEventListener("DOMContentLoaded", () => {
-    const swiper = new Swiper('.how-to-play-swiper', {
+    const tipsSwiper = new Swiper('.tips-swiper', {
         slidesPerView: 1,
         spaceBetween: 30,
         grabCursor: true,
         modules: [Navigation, Pagination],
         pagination: {
-            el: '.how-to-play-swiper-pagination',
+            el: '.tips-swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.how-to-play-swiper-button-next',
-            prevEl: '.how-to-play-swiper-button-prev',
+            nextEl: '.tips-swiper-button-next',
+            prevEl: '.tips-swiper-button-prev',
         },
         breakpoints: {
             1200: {
-                spaceBetween: 20,
-                slidesPerView: 2,
+                spaceBetween: 400,
+                slidesPerView: 1,
             },
         },
     });

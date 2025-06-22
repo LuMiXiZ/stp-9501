@@ -1,0 +1,97 @@
+.tips-container {
+  padding: 0;
+}
+.tips-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 37px;
+}
+.tips-swiper {
+  padding: 0 16px 20px !important;
+}
+.tips-swiper-slide {
+  border-radius: 12px;
+  padding: 86px 10px;
+  width: 289px;
+  height: 421px !important;
+  box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
+    0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
+    0 4px 3px 0 rgba(154, 17, 32, 0.28), 0 6px 6px 0 rgba(154, 17, 32, 0.35),
+    0 10px 10px 0 rgba(154, 17, 32, 0.46);
+  background: var(--orange);
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.tips-slide-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
+}
+.tips-swiper-button-next,
+.tips-swiper-button-prev {
+  display: none;
+}
+.tips-swiper-pagination {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+.tips-swiper-pagination {
+  --swiper-pagination-color: var(--orange);
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: var(--white);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 0px;
+  --swiper-pagination-bullet-vertical-gap: 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .tips-title {
+    margin-bottom: 42px;
+  }
+  .tips-content-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 64px;
+  }
+  .tips-swiper {
+    padding: 0 30% 20px !important;
+  }
+  .tips-swiper-slide {
+    transition: transform 0.6s;
+  }
+  .tips-swiper-button-next,
+  .tips-swiper-button-prev {
+    display: flex;
+    align-items: center;
+  }
+  .tips-swiper-icon {
+    fill: var(--white);
+    transition: fill 0.3s ease-in-out;
+  }
+  .tips-swiper-button-next:hover .tips-swiper-icon,
+  .tips-swiper-button-prev:hover .tips-swiper-icon {
+    fill: var(--red);
+  }
+  .tips-swiper-buttons-next.swiper-button-disabled,
+  .tips-swiper-button-prev.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .tips-swiper-pagination {
+    display: none;
+  }
+}
