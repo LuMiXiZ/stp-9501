@@ -8,6 +8,8 @@
   font-size: 40px;
   color: var(--red);
   margin-bottom: 42px;
+  padding: 0 16px;
+  margin-left: -33px;
 }
 
 .reviews-swiper {
