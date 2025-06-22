@@ -1,0 +1,73 @@
+.love-pizza-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+.love-pizza-text-container {
+  border-radius: 12px;
+  padding: 24px 16px 16px;
+  box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
+    0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
+    0 4px 3px 0 rgba(154, 17, 32, 0.28), 0 6px 6px 0 rgba(154, 17, 32, 0.35),
+    0 10px 10px 0 rgba(154, 17, 32, 0.46);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.love-pizza-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--orange);
+}
+.love-pizza-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.love-pizza-item {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--red);
+  position: relative;
+  padding-left: 32px;
+}
+.love-pizza-item::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+@media only screen and (min-width: 1200px) {
+  .love-pizza-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .love-pizza-text-container {
+    padding: 42px;
+    min-width: 526px;
+    max-height: 757px;
+    height: 100%;
+    height: 688px;
+    margin-right: 200px;
+  }
+  .love-pizza-title {
+    max-width: 344px;
+  }
+  .love-pizza-list {
+    gap: 36px;
+  }
+  .love-pizza-image {
+    min-width: 339px;
+    height: 703px;
+  }
+}

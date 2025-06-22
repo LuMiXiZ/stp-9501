@@ -1,0 +1,80 @@
+.game-modes-container {
+  padding: 144px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+.game-modes-title {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: var(--red);
+}
+.game-modes-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 68px;
+  padding: 0 16px;
+}
+.game-modes-card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.game-modes-card-images {
+  border-radius: 12px;
+  box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
+    0 1px 1px 0 rgba(154, 17, 32, 0.18), 0 2px 2px 0 rgba(154, 17, 32, 0.23),
+    0 4px 3px 0 rgba(154, 17, 32, 0.28), 0 6px 6px 0 rgba(154, 17, 32, 0.35),
+    0 10px 10px 0 rgba(154, 17, 32, 0.46);
+}
+.game-modes-card-text {
+  border-radius: 12px;
+  padding: 20px 22px;
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.game-modes-card-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: var(--red);
+}
+.game-modes-card-description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--red);
+}
+@media only screen and (min-width: 1200px) {
+  .game-modes-container {
+    padding: 144px 64px;
+  }
+
+  .game-modes-box {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0;
+  }
+  .game-modes-card-box {
+    width: calc((100% - 40px) / 3);
+  }
+  .game-modes-card-images img {
+    width: 100%;
+  }
+  .game-modes-card-text {
+    min-height: 192px;
+    max-height: 237px;
+    height: 100%;
+  }
+}
