@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/stp-9501/index.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-9501/assets/vendor-Dt-heFyE.js">
     <link rel="stylesheet" crossorigin href="/stp-9501/assets/vendor-Ds_YmOBQ.css">
-    <link rel="stylesheet" crossorigin href="/stp-9501/assets/index-TE95gjy6.css">
+    <link rel="stylesheet" crossorigin href="/stp-9501/assets/index-Dh1FkUYd.css">
   </head>
 
   <body>
@@ -433,7 +433,7 @@
     <h2 class="reviews-h2">Reviews from Players</h2>
     <div class="swiper reviews-swiper">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper reviews-swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="reviews-slide-div">
@@ -527,8 +527,16 @@
 
       <!-- If we need navigation buttons -->
       <div class="reviews-swiper-buttons swiper-nav">
-        <div class="reviews-swiper-button-prev">asd</div>
-        <div class="reviews-swiper-button-next">asdsd</div>
+        <div class="reviews-swiper-button-prev">
+          <svg class="reviews-swiper-buttons-svg">
+            <use href="/stp-9501/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="reviews-swiper-button-next">
+          <svg class="reviews-swiper-buttons-svg">
+            <use href="/stp-9501/sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -545,30 +553,40 @@
 
       <p class="community-top-p-follow">Follow us on:</p>
       <div class="community-sosial">
-        <div class="community-sosial-current">
-          <svg class="community-sosial-svg">
-            <use href="/stp-9501/sprite.svg#facebook"></use>
-          </svg>
-          <p class="community-sosial-p">Facebook</p>
-        </div>
-        <div class="community-sosial-current">
-          <svg class="community-sosial-svg">
-            <use href="/stp-9501/sprite.svg#instagram"></use>
-          </svg>
-          <p class="community-sosial-p">Instagram</p>
-        </div>
-        <div class="community-sosial-current">
-          <svg class="community-sosial-svg">
-            <use href="/stp-9501/sprite.svg#twitter"></use>
-          </svg>
-          <p class="community-sosial-p">Twitter / X</p>
-        </div>
-        <div class="community-sosial-current">
-          <svg class="community-sosial-svg">
-            <use href="/stp-9501/sprite.svg#youtube"></use>
-          </svg>
-          <p class="community-sosial-p">YouTube</p>
-        </div>
+        <a href="https://www.facebook.com/pizzarushgame"
+          ><div class="community-sosial-current">
+            <svg class="community-sosial-svg">
+              <use href="/stp-9501/sprite.svg#facebook"></use>
+            </svg>
+            <p class="community-sosial-p">Facebook</p>
+          </div></a
+        >
+        <a href="https://www.instagram.com/pizzarushgame/#">
+          <div class="community-sosial-current">
+            <svg class="community-sosial-svg">
+              <use href="/stp-9501/sprite.svg#instagram"></use>
+            </svg>
+            <p class="community-sosial-p">Instagram</p>
+          </div>
+        </a>
+
+        <a href="https://x.com/pizzarushgame">
+          <div class="community-sosial-current">
+            <svg class="community-sosial-svg">
+              <use href="/stp-9501/sprite.svg#twitter"></use>
+            </svg>
+            <p class="community-sosial-p">Twitter / X</p>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@pizzarushgame">
+          <div class="community-sosial-current">
+            <svg class="community-sosial-svg">
+              <use href="/stp-9501/sprite.svg#youtube"></use>
+            </svg>
+            <p class="community-sosial-p">YouTube</p>
+          </div>
+        </a>
       </div>
       <p class="community-sosial-use-p">Use hashtags to get featured:</p>
       <p class="community-sosial-bottom-p">
@@ -602,7 +620,10 @@
         Join the delivery frenzy and rise through the pizza ranks. Serve fast,
         upgrade smart, and dominate the kitchen.
       </p>
-      <svg class="play-now-svg"><use href="/stp-9501/sprite.svg#link"></use></svg>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.yamystudio.pizzarush&hl=en&gl=us"
+        ><svg class="play-now-svg"><use href="/stp-9501/sprite.svg#link"></use></svg
+      ></a>
     </div>
   </div>
 </section>
@@ -611,7 +632,10 @@
   <div class="container contact-container">
     <h2 class="contact-h2"> Contact & Support</h2>
     <p class="contact-text">Need help or want to share feedback?</p>
-    <p class="contact-email">Email us at: info@rushpulse.online</p>
+    <p class="contact-email">
+      Email us at:
+      <a href="mailto:info@rushpulse.online">info@rushpulse.online</a>
+    </p>
     <svg class="contact-email-svg"><use href="/stp-9501/sprite.svg#mail"></use></svg>
     <p class="contact-text">We’d love to hear from you!</p>
   </div>
