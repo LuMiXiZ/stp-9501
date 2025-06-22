@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.reviews-swiper', {
     modules: [Navigation, Pagination, Autoplay],
 
-    loop: true,
+    // loop: true,
 
     initialSlide: 0,
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     breakpoints: {
       0: { slidesPerView: 1, spaceBetween: 32, centeredSlides: false },
-      1440: { slidesPerView: 1, spaceBetween: 32, centeredSlides: false },
+      1440: { slidesPerView: 1, spaceBetween: 10, centeredSlides: false },
     },
   });
 });
