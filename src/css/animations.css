@@ -6,6 +6,58 @@
     transform: translateY(-10px);
   }
 }
+@keyframes boat-sway-combined {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  10% {
+    transform: rotate(-3deg) translateY(-3px);
+  }
+  20% {
+    transform: rotate(-6deg) translateY(-6px);
+  }
+  30% {
+    transform: rotate(-6deg) translateY(-8px);
+  }
+  40% {
+    transform: rotate(-3deg) translateY(-9px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-10px);
+  }
+  60% {
+    transform: rotate(3deg) translateY(-9px);
+  }
+  70% {
+    transform: rotate(6deg) translateY(-8px);
+  }
+  80% {
+    transform: rotate(6deg) translateY(-6px);
+  }
+  90% {
+    transform: rotate(3deg) translateY(-3px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+@keyframes floatFlyWave {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(1.5deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(-1.5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
