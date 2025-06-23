@@ -1,5 +1,5 @@
 .reviews-container {
-  padding: 144px 0;
+  padding: 144px 16px;
 }
 
 .reviews-h2 {
@@ -8,8 +8,6 @@
   font-size: 40px;
   color: var(--red);
   margin-bottom: 42px;
-  padding: 0 16px;
-  margin-left: -33px;
 }
 
 .reviews-swiper {
@@ -100,9 +98,8 @@
   }
 
   .reviews-swiper {
-    /* width: 1072px; */
     margin: 0 !important;
-    margin-left: -20px !important;
+    /* margin-left: -20px !important; */
   }
 
   .swiper-slide {
@@ -117,13 +114,13 @@
   .reviews-slide-div {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 27px;
+    gap: 20px;
   }
 
   .reviews-slide-div-current {
-    min-width: 344px;
-    max-width: 424px;
-    justify-content: flex-start;
+    width: 344px;
+    /* max-width: 424px; */
+    /* justify-content: flex-start; */
   }
 
   .reviews-swiper-pagination {
