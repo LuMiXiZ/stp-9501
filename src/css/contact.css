@@ -30,7 +30,13 @@
   color: var(--red);
   margin-bottom: 32px;
 }
-
+.contact-email-link {
+  color: var(--red);
+  transition: color 0.3s ease-in-out;
+}
+.contact-email-link:hover {
+  color: var(--white);
+}
 .contact-email-svg {
   width: 84px;
   height: 84px;
