@@ -25,6 +25,10 @@
   font-size: 16px;
   text-align: center;
   color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+.footer-link:hover {
+  color: var(--red);
 }
 
 .footer-all-rights {
