@@ -10,8 +10,8 @@
   padding: 0 16px;
 }
 .reviews-swiper {
-  height: 480px;
-  padding: 12px 16px !important;
+  height: 472px;
+  padding: 0 16px !important;
   margin-bottom: 16px;
 }
 .reviews-swiper-slide {
@@ -64,7 +64,6 @@
     margin-bottom: 0;
   }
   .reviews-swiper-slide {
-    width: calc((100% - 40px) / 3) !important;
     padding: 22px 18px;
   }
   .reviews-swiper-buttons {

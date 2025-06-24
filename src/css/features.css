@@ -39,6 +39,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-left: 6px;
 }
 .features-pizza-icon {
   fill: var(--white);
@@ -65,7 +66,7 @@
   width: 160px;
 }
 .features-pizza-slice:nth-child(3) .features-pizza-icon {
-  margin-left: 15px;
+  margin-top: 24px;
 }
 
 @media only screen and (min-width: 1200px) {

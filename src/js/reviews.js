@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       1200: {
         slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
         grid: {
           rows: 1,
           fill: 'row',

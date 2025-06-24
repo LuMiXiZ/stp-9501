@@ -21,7 +21,6 @@
 }
 .how-to-play-slide {
   border-radius: 12px 12px 0 0;
-  padding-top: 42px;
   max-height: 565px;
   overflow: hidden;
   background: var(--white);
@@ -31,7 +30,8 @@
     0 10px 10px 0 rgba(154, 17, 32, 0.46);
 }
 .how-to-play-slide-text {
-  padding: 0 6px 38px;
+  padding: 0 6px;
+  height: 168px;
   display: flex;
   flex-direction: row;
   align-items: center;
