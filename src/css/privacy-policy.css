@@ -46,6 +46,7 @@
 .policy-list-link {
   color: var(--white);
   transition: color 0.3s ease-in-out;
+  text-decoration: underline;
 }
 .policy-list-link:hover {
   color: var(--red);
