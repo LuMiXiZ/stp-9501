@@ -84,18 +84,27 @@
   border-radius: 12px;
   width: 162px;
   height: 48px;
-  background: var(--orange);
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  color: var(--white);
   border: 1px solid var(--orange);
+}
+.cookies-decline {
+  color: var(--orange);
+  background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 .cookies-decline:hover,
+.cookies-decline:focus {
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.cookies-accept {
+  background: var(--orange);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
 .cookies-accept:hover,
-.cookies-decline:focus,
 .cookies-accept:focus {
   background-color: transparent;
   color: var(--orange);
