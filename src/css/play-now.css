@@ -25,6 +25,10 @@
   margin-bottom: 32px;
 }
 
+.play-now-link:hover .play-now-svg {
+  animation: floatUp 1s ease-in-out infinite alternate;
+}
+
 .play-now-svg {
   width: 191px;
   height: 56px;

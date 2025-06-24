@@ -42,6 +42,14 @@
   margin-bottom: 32px;
 }
 
+.community-sosial-link {
+  width: fit-content;
+}
+
+.community-sosial-link:hover p {
+  color: var(--red);
+}
+
 .community-sosial-current {
   display: flex;
   align-items: center;
@@ -60,6 +68,7 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--orange);
+  transition: color 0.3s ease-in-out;
 }
 
 .community-sosial-use-p {
