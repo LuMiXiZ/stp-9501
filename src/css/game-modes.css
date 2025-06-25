@@ -1,3 +1,6 @@
+.game-modes-section {
+  scroll-margin-top: -44px;
+}
 .game-modes-container {
   padding: 144px 0;
   display: flex;
@@ -56,10 +59,12 @@
   color: var(--red);
 }
 @media only screen and (min-width: 1200px) {
+  .game-modes-section {
+    scroll-margin-top: 0;
+  }
   .game-modes-container {
     padding: 144px 64px;
   }
-
   .game-modes-box {
     flex-direction: row;
     align-items: flex-start;

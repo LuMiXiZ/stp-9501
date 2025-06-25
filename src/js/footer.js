@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (cookiePermision === null) {
         setTimeout(() => {
-            banner.setAttribute('data-visible', 'true');
+            banner.dataset.visible = true;
         }, 5000);
     }
 
     acceptBtn.addEventListener('click', () => {
         localStorage.setItem('cookiePermision', 'true');
-        banner.setAttribute('data-visible', 'false');
+        banner.dataset.visible = false;
     });
 
     declineBtn.addEventListener('click', () => {
         localStorage.setItem('cookiePermision', 'false');
-        banner.setAttribute('data-visible', 'false');
+        banner.dataset.visible = false;
     });
 });

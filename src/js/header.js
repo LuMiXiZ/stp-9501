@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('[data-action="toggle-burger"]');
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
     const menuLinks = document.querySelectorAll('[data-action="close-menu"]');
     const body = document.body;
 
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const isOpen = burger.getAttribute('data-state') === 'open';
         const newState = isOpen ? 'closed' : 'open';
 
-        burger.setAttribute('data-state', newState);
-        mobileMenu.setAttribute('data-state', newState);
+        burger.dataset.state = newState;
+        mobileMenu.dataset.state = newState;
 
         if (newState === 'open') {
-            body.setAttribute('data-menu', 'open');
+            body.dataset.menu = 'open';
         } else {
             body.removeAttribute('data-menu');
         }
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
-            burger.setAttribute('data-state', 'closed');
-            mobileMenu.setAttribute('data-state', 'closed');
+            burger.dataset.state = 'closed';
+            mobileMenu.dataset.state = 'closed';
             body.removeAttribute('data-menu');
         });
     });
 
-    const header = document.querySelector('.header');
+    const header = document.querySelector('[data-header]');
     const sections = document.querySelectorAll('[data-bg]');
 
     const getOppositeColor = (color) => {
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (currentSection) {
-            const sectionColor = currentSection.getAttribute('data-bg');
-            header.setAttribute('data-bg', getOppositeColor(sectionColor));
+            const sectionColor = currentSection.dataset.bg;
+            header.dataset.bg = getOppositeColor(sectionColor);
         }
     };
 

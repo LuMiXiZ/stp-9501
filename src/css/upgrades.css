@@ -2,6 +2,7 @@
   padding-top: 144px;
   padding-bottom: 144px;
   position: relative;
+  scroll-margin-top: -76px;
 }
 .upgrades-text-box {
   border-radius: 12px;
@@ -63,6 +64,10 @@
   height: 50px;
 }
 @media only screen and (min-width: 1200px) {
+  .upgrades-section {
+    padding-top: 134px;
+    scroll-margin-top: -34px;
+  }
   .upgrades-text-box {
     margin: 0 182px;
     padding: 42px 72px;

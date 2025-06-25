@@ -31,6 +31,11 @@ body[data-menu='open'] {
   overflow: hidden;
 }
 section {
-  scroll-margin-top: 100px;
-  overflow: hidden;
+  scroll-margin-top: 68px;
+  overflow: clip;
+}
+@media only screen and (min-width: 1200px) {
+  section {
+    scroll-margin-top: 100px;
+  }
 }

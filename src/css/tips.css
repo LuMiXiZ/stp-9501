@@ -1,3 +1,6 @@
+.tips-section {
+  scroll-margin-top: 100px;
+}
 .tips-container {
   padding: 0;
 }
@@ -57,6 +60,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .tips-section {
+    scroll-margin-top: 130px;
+  }
   .tips-title {
     margin-bottom: 42px;
   }

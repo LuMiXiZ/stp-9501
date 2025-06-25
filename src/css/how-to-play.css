@@ -1,5 +1,6 @@
 .how-to-play-section {
   background-color: var(--orange);
+  scroll-margin-top: 42px;
 }
 .how-to-play-container {
   padding: 42px 0 12px;
@@ -72,6 +73,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .how-to-play-section {
+    scroll-margin-top: 100px;
+  }
   .how-to-play-container {
     padding: 42px 54px;
   }

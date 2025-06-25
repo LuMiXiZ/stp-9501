@@ -51,6 +51,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 0;
+    padding-bottom: 10px;
   }
   .love-pizza-text-container {
     padding: 42px;

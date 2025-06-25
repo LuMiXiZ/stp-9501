@@ -6,18 +6,18 @@ import 'swiper/css/pagination';
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const swiper = new Swiper('.how-to-play-swiper', {
+    const swiper = new Swiper('[data-htp-swiper]', {
         slidesPerView: 1,
         spaceBetween: 30,
         grabCursor: true,
         modules: [Navigation, Pagination],
         pagination: {
-            el: '.how-to-play-swiper-pagination',
+            el: '[data-htp-pagination]',
             clickable: true,
         },
         navigation: {
-            nextEl: '.how-to-play-swiper-button-next',
-            prevEl: '.how-to-play-swiper-button-prev',
+            nextEl: '[data-htp-button-next]',
+            prevEl: '[data-htp-button-prev]',
         },
         breakpoints: {
             1200: {
