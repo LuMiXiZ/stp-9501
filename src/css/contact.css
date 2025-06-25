@@ -1,3 +1,6 @@
+.contact-section {
+  scroll-margin-top: -44px;
+}
 .contact-container {
   padding: 144px 0;
   display: flex;

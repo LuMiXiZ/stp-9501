@@ -2,7 +2,7 @@
   background-color: var(--green);
   padding: 144px 0;
   position: relative;
-  overflow: hidden;
+  scroll-margin-top: -76px;
 }
 .about-section-wrapper {
   box-shadow: 0 0px 0px 0 rgba(154, 17, 32, 0.11),
@@ -75,6 +75,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .about-section {
+    scroll-margin-top: 28px;
+  }
   .about-container {
     padding-top: 42px;
     padding-bottom: 42px;

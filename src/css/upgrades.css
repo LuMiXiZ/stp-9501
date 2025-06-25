@@ -2,6 +2,7 @@
   padding-top: 144px;
   padding-bottom: 144px;
   position: relative;
+  scroll-margin-top: -76px;
 }
 .upgrades-text-box {
   border-radius: 12px;

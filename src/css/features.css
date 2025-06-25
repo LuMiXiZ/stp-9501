@@ -1,5 +1,6 @@
 .features-section {
   padding-bottom: 144px;
+  scroll-margin-top: 100px;
 }
 .features-container {
   display: flex;
@@ -70,6 +71,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .features-section {
+    scroll-margin-top: 140px;
+  }
   .features-title {
     margin-bottom: 34px;
   }

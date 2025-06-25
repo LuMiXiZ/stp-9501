@@ -1,3 +1,6 @@
+.game-info-section {
+  scroll-margin-top: -44px;
+}
 .game-info-container {
   padding: 144px 16px;
 }
