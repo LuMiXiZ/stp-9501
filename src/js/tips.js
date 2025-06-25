@@ -5,18 +5,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const tipsSwiper = new Swiper('.tips-swiper', {
+    const tipsSwiper = new Swiper('[data-tips-swiper]', {
         slidesPerView: 1,
         spaceBetween: 30,
         grabCursor: true,
         modules: [Navigation, Pagination],
         pagination: {
-            el: '.tips-swiper-pagination',
+            el: '[data-tips-pagination]',
             clickable: true,
         },
         navigation: {
-            nextEl: '.tips-swiper-button-next',
-            prevEl: '.tips-swiper-button-prev',
+            nextEl: '[data-tips-button-next]',
+            prevEl: '[data-tips-button-prev]',
         },
         breakpoints: {
             1200: {

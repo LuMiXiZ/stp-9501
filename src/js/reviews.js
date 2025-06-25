@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/grid';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const reviewsSwiper = new Swiper('.reviews-swiper', {
+  const reviewsSwiper = new Swiper('[data-reviews-swiper]', {
     modules: [Navigation, Pagination, Grid],
     grabCursor: true,
     spaceBetween: 32,
@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     pagination: {
-      el: '.reviews-swiper-pagination',
+      el: '[data-reviews-pagination]',
       clickable: true,
     },
     navigation: {
-      nextEl: '.reviews-swiper-button-next',
-      prevEl: '.reviews-swiper-button-prev',
+      nextEl: '[data-reviews-button-next]',
+      prevEl: '[data-reviews-button-prev]',
     },
 
     breakpoints: {
