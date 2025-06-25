@@ -23,13 +23,13 @@
     <meta name="author" content="RushPulse Games" />
     <meta name="robots" content="index, follow" />
     <script type="module" crossorigin src="/stp-9501/assets/vendor-BukXDtz7.js"></script>
-    <script type="module" crossorigin src="/stp-9501/assets/main-BJxv4cvK.js"></script>
-    <link rel="stylesheet" crossorigin href="/stp-9501/assets/main-DRiDEueP.css">
+    <script type="module" crossorigin src="/stp-9501/assets/main-BuyW9Pfr.js"></script>
+    <link rel="stylesheet" crossorigin href="/stp-9501/assets/main-DT_U0oif.css">
     <link rel="stylesheet" crossorigin href="/stp-9501/assets/vendor-JXgdSMyN.css">
   </head>
 
   <body>
-    <header class="header" data-bg="green">
+    <header class="header" data-header data-bg="green">
   <div class="container header-container">
     <a href="./index.html" class="logo-link">Pizza Rush</a>
     <nav class="header-nav">
@@ -58,10 +58,10 @@
           <a href="#tips" class="nav-link">Tips</a>
         </li>
         <li class="nav-item">
-          <a href="#community" class="nav-link">Community</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
         </li>
         <li class="nav-item">
-          <a href="#reviews" class="nav-link">Reviews</a>
+          <a href="#community" class="nav-link">Community</a>
         </li>
         <li class="nav-item">
           <a href="#game-info" class="nav-link">Game Info</a>
@@ -87,7 +87,7 @@
 
 
     <main>
-      <div class="mobile-menu" data-state="closed">
+      <div class="mobile-menu" data-mobile-menu data-state="closed">
   <ul class="mobile-menu-list">
     <li class="mobile-menu-item">
       <a href="#about" class="mobile-menu-link" data-action="close-menu"
@@ -126,13 +126,13 @@
       <a href="#tips" class="mobile-menu-link" data-action="close-menu">Tips</a>
     </li>
     <li class="mobile-menu-item">
-      <a href="#community" class="mobile-menu-link" data-action="close-menu"
-        >Community</a
+      <a href="#reviews" class="mobile-menu-link" data-action="close-menu"
+        >Reviews</a
       >
     </li>
     <li class="mobile-menu-item">
-      <a href="#reviews" class="mobile-menu-link" data-action="close-menu"
-        >Reviews</a
+      <a href="#community" class="mobile-menu-link" data-action="close-menu"
+        >Community</a
       >
     </li>
     <li class="mobile-menu-item">
@@ -302,7 +302,7 @@
       <section class="how-to-play-section" id="how-to-play" data-bg="orange">
   <div class="container how-to-play-container">
     <h2 class="how-to-play-title">How to Play</h2>
-    <div class="how-to-play-swiper swiper">
+    <div class="how-to-play-swiper swiper" data-htp-swiper>
       <div class="swiper-wrapper">
         <div class="how-to-play-slide swiper-slide">
           <div class="how-to-play-slide-text">
@@ -424,17 +424,17 @@
       </div>
 
       <div class="how-to-play-swiper-buttons">
-        <div class="how-to-play-swiper-button-prev">
+        <div class="how-to-play-swiper-button-prev" data-htp-button-prev>
           <svg class="how-to-play-swiper-icon" width="71" height="71">
             <use href="/stp-9501/sprite.svg#arrow-left"></use>
           </svg>
         </div>
-        <div class="how-to-play-swiper-button-next">
+        <div class="how-to-play-swiper-button-next" data-htp-button-next>
           <svg class="how-to-play-swiper-icon" width="71" height="71">
             <use href="/stp-9501/sprite.svg#arrow-right"></use>
           </svg>
         </div>
-        <div class="how-to-play-swiper-pagination"></div>
+        <div class="how-to-play-swiper-pagination" data-htp-pagination></div>
       </div>
     </div>
   </div>
@@ -621,12 +621,12 @@
   <div class="container tips-container">
     <h2 class="tips-title">Tips for New Players</h2>
     <div class="tips-content-box">
-      <div class="tips-swiper-button-prev">
+      <div class="tips-swiper-button-prev" data-tips-button-prev>
         <svg class="tips-swiper-icon" width="71" height="71">
           <use href="/stp-9501/sprite.svg#arrow-left"></use>
         </svg>
       </div>
-      <div class="swiper tips-swiper">
+      <div class="swiper tips-swiper" data-tips-swiper>
         <div class="swiper-wrapper">
           <div class="tips-swiper-slide swiper-slide">
             <svg class="tips-swiper-slide-icon" width="124" height="124">
@@ -662,20 +662,20 @@
           </div>
         </div>
       </div>
-      <div class="tips-swiper-button-next">
+      <div class="tips-swiper-button-next" data-tips-button-next>
         <svg class="tips-swiper-icon" width="71" height="71">
           <use href="/stp-9501/sprite.svg#arrow-right"></use>
         </svg>
       </div>
     </div>
-    <div class="tips-swiper-pagination"></div>
+    <div class="tips-swiper-pagination" data-tips-pagination></div>
   </div>
 </section>
 
       <section class="reviews-section" id="reviews" data-bg="green">
   <div class="container reviews-container">
     <h2 class="reviews-title">Reviews from Players</h2>
-    <div class="swiper reviews-swiper">
+    <div class="swiper reviews-swiper" data-reviews-swiper>
       <div class="swiper-wrapper">
         <div class="reviews-swiper-slide swiper-slide">
           <p class="reviews-slide-text">
@@ -746,19 +746,19 @@
         </div>
       </div>
       <div class="reviews-swiper-buttons">
-        <div class="reviews-swiper-button-prev">
+        <div class="reviews-swiper-button-prev" data-reviews-button-prev>
           <svg class="reviews-swiper-icon" width="71" height="71">
             <use href="/stp-9501/sprite.svg#arrow-left"></use>
           </svg>
         </div>
-        <div class="reviews-swiper-button-next">
+        <div class="reviews-swiper-button-next" data-reviews-button-next>
           <svg class="reviews-swiper-icon" width="71" height="71">
             <use href="/stp-9501/sprite.svg#arrow-right"></use>
           </svg>
         </div>
       </div>
     </div>
-    <div class="reviews-swiper-pagination"></div>
+    <div class="reviews-swiper-pagination" data-reviews-pagination></div>
   </div>
 </section>
 
