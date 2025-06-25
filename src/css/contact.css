@@ -51,6 +51,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .contact-section {
+    scroll-margin-top: 0px;
+  }
   .contact-h2 {
     margin-bottom: 18px;
   }

@@ -31,6 +31,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .game-info-section {
+    scroll-margin-top: 0px;
+  }
   .game-info-h2 {
     max-width: 350px;
     margin: 0 auto;
